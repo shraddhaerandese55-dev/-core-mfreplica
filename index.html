@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Franklin India Large Cap Fund</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/fund-details.css">
+    <link rel="stylesheet" href="css/performance.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Franklin India Large Cap Fund (G)</h1>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="fund-overview">
+            <h2 id="fundName">Loading...</h2>
+
+            <div class="fund-card">
+
+                <div class="info-box">
+                    <label>Latest NAV</label>
+                    <h3 id="navValue">--</h3>
+                </div>
+
+                <div class="info-box">
+                    <label>Date</label>
+                    <h3 id="navDate">--</h3>
+                </div>
+
+                <div class="info-box">
+                    <label>Category</label>
+                    <h3>Large Cap</h3>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="performance">
+            <h2>Performance Returns</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Period</th>
+                        <th>Returns</th>
+                    </tr>
+                </thead>
+
+                <tbody id="returnsTable"></tbody>
+
+            </table>
+        </section>
+
+        <section class="chart-section">
+            <h2>NAV Trend</h2>
+
+            <canvas id="navChart"></canvas>
+        </section>
+
+    </main>
+
+    <script src="js/api.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/fundDetails.js"></script>
+<script src="js/performance.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/app.js"></script>
+</body>
+
+</html>

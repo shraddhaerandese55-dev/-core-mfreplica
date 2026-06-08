@@ -1,0 +1,7 @@
+@media(max-width:768px){
+
+    .fund-card{
+        flex-direction:column;
+    }
+
+}
